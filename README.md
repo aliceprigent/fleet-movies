@@ -4,7 +4,7 @@ This is a movie browsing app in React.
 
 ### Setting Up
 
-Fork the repo
+Fork the repo<br />
 Clone the repo 
 
 $ npm install<br />

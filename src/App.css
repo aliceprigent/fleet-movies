@@ -1,41 +1,25 @@
-.App {
-  text-align: center;
+
+:root {
+  --green: #0dd27a;
+  --grey: #7e7e7e;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fleet-color {
+  color: var(--green);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fleet-font {
+  color: var(--grey);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fleet-button {
+  background-color: var(--green);
+  color: white; 
+  padding: 0.5em 1em;
+  border-radius: 10px;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -47,6 +31,13 @@ h1, h2, h3 {
   text-transform: uppercase;
 
 }
+
+h1 {
+  font-size: 25px;
+  margin: 0em 1em;
+  text-align: start;
+}
+
 
 h2 {
   font-size: 30px;
@@ -112,7 +103,7 @@ h3 {
 
 .movie-list p:hover {
   cursor: pointer;
-  color:#0dd27a;
+  color: var(--green);
 }
 
 .movie-details {
@@ -150,13 +141,6 @@ h3 {
   margin: 4px 0px;
 }
 
-h1 {
-  font-size: 25px;
-  margin: 0em 1em;
-  text-align: start;
-}
-
-
 
 .search-bar {
 width:100%;
@@ -178,22 +162,6 @@ align-items: center;
 .paragraph {
   margin-top: 1em;
   
-}
-
-.fleet-color {
-  color:#0dd27a;
-}
-
-.fleet-font {
-  color: #7e7e7e;
-}
-
-.fleet-button {
-  background-color:#0dd27a;
-  color: white; 
-  padding: 0.5em 1em;
-  border-radius: 10px;
-
 }
 
 .img-search {
