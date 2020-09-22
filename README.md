@@ -7,10 +7,10 @@ This is a movie browsing app in React.
 Fork the repo
 Clone the repo 
 
-$ npm install
+$ npm install<br />
 $ npm install axios
 
-$ npm start"<br />
+$ npm start<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
