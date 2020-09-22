@@ -37,6 +37,24 @@
   }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+
+}
+
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 1.2em;
+}
+
 .column {
   display: flex; 
   flex-direction: column;
@@ -67,44 +85,82 @@
 }
 
 .movie-list {
-  width:35%;
-  margin: 2em;
+  width:50%;
+  margin: 0em 2em;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   
 }
 
+@media (max-width : 600px) {
+  .mobile {
+    flex-direction: column;
+  }
+
+  .movie-list {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+.movie-list p {
+  padding: 3px;
+  margin: 5px;
+  
+}
+
 .movie-list p:hover {
   cursor: pointer;
+  color:#0dd27a;
 }
 
 .movie-details {
-  width: 50%;
-  height: 35em;
-  margin: 3em 2em 2em;
-  border-radius: 10px;
-  background-color: rgba(211, 211, 211, 0.329);
+  width: 80%;
+  padding: 1em;
+  margin: 2em 2em 2em;
+  border-radius: 5px;
+  box-shadow: -4px 0px 67px 0px rgba(0,0,0,0.23);
+  background-color: rgba(235, 231, 231, 0.418);
+  
 
 }
 
 .movie-img {
-  width: 30%; 
+  width: 35%; 
   margin: 1em;
 }
-
+.movie-icon {
+  width: 10%;
+}
 .overview {
   text-align: start;
-  margin: 1em;
+  margin: 0px;
+  border-radius: 10px;
+  border: solid 1px rgba(128, 128, 128, 0.493);
+  padding: 0.5em 1em;
+
 }
 
-h4 {
-  margin: 1em;
+.arrow {
+  width: 20px;
+  height: 20px;
+ 
+  padding: 2px 0px;
+  margin: 4px 0px;
 }
+
+h1 {
+  font-size: 25px;
+  margin: 0em 1em;
+  text-align: start;
+}
+
+
 
 .search-bar {
 width:100%;
 height: 5em;
-background-color: blue;
 display:flex; 
 justify-content: start;
 align-items: center;
@@ -114,6 +170,32 @@ align-items: center;
   margin: 10px;
   padding: 10px;
   width: 60%;
+  border: solid 1px grey;
   border-radius: 20px;
-  border-style: none;
+  
+}
+
+.paragraph {
+  margin-top: 1em;
+  
+}
+
+.fleet-color {
+  color:#0dd27a;
+}
+
+.fleet-font {
+  color: #7e7e7e;
+}
+
+.fleet-button {
+  background-color:#0dd27a;
+  color: white; 
+  padding: 0.5em 1em;
+  border-radius: 10px;
+
+}
+
+.img-search {
+  width: 2em;
 }
